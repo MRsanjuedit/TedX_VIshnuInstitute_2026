@@ -1,5 +1,5 @@
-import logo from "../assets/images/logo.jpg";
-import logoMobile from "../assets/images/logo_mobile.png";
+import logo from "../assets/images/tedx_logo.jpg";
+import logoMobile from "../assets/images/tedx_logo_mobile.png";
 import { NavLink, useLocation } from "react-router-dom";
 import Button from "../components/ui/button";
 import {
@@ -115,7 +115,7 @@ function Navbar() {
               >
                 {item.label}
               </NavLink>
-            )
+            ),
           )}
         </div>
 
@@ -211,7 +211,7 @@ function Navbar() {
             >
               {item.label}
             </NavLink>
-          )
+          ),
         )}
 
         {/* Mobile Button */}
