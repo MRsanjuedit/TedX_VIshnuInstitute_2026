@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-
 const images = Object.values(
-  import.meta.glob("../assets/images/Gallery/*.{jpg,jpeg,png,JPG,JPEG,PNG}", {
-    eager: true,
-    import: "default",
-  }),
+  import.meta.glob(
+    "../assets/images/Gallery/tedx_*.{jpg,jpeg,png,JPG,JPEG,PNG}",
+    {
+      eager: true,
+      import: "default",
+    },
+  ),
 ).sort((a, b) => a.localeCompare(b));
-
 
 const season2Talks = [
   { speaker: "Ravi Mantri", videoId: "5bOeKaE4PbU" },

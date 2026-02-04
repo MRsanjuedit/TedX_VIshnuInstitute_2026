@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/tedx_logo.png";
 
 export default function Loader() {
   return (

@@ -1,49 +1,49 @@
 import React from "react";
 import Card from "./../components/common/card";
 //Core Team Images
-import Chairman from "./../assets/images/Team/Core/Chairman.jpg";
-import Principal from "./../assets/images/Team/Core/Principal.jpg";
-import Vice_Principal from "./../assets/images/Team/Core/Vice_Principal.jpg";
+import Chairman from "./../assets/images/Team/Core/tedx_chairman.jpg";
+import Principal from "./../assets/images/Team/Core/tedx_principal.jpg";
+import Vice_Principal from "./../assets/images/Team/Core/tedx_vice_principal.jpg";
 //Organizing Team Images
-import Organizer from "./../assets/images/Team/Organizers/Organizer.jpg";
-import Co_Org from "./../assets/images/Team/Organizers/Co_Org.jpeg";
-import Co_Org1 from "./../assets/images/Team/Organizers/Co_Org1.jpg";
-import Curator from "./../assets/images/Team/Organizers/Curator.jpeg";
+import Organizer from "./../assets/images/Team/Organizers/tedx_organizer.jpg";
+import Co_Org from "./../assets/images/Team/Organizers/tedx_co_org.jpeg";
+import Co_Org1 from "./../assets/images/Team/Organizers/tedx_co_org1.jpg";
+import Curator from "./../assets/images/Team/Organizers/tedx_curator.jpeg";
 //Production and Communication Team Images
-import Prod_Lead from "./../assets/images/Team/Production/Lead.jpg";
-import Prod_Co_Lead from "./../assets/images/Team/Production/Co_Lead.jpeg";
-import Prod_Mem1 from "./../assets/images/Team/Production/Mem1.png";
-import Prod_Mem2 from "./../assets/images/Team/Production/Mem2.png";
-import Prod_Mem3 from "./../assets/images/Team/Production/Mem3.png";
-import Prod_Mem4 from "./../assets/images/Team/Production/Mem4.jpg";
-import Prod_Vol from "./../assets/images/Team/Production/Volunteer.png";
+import Prod_Lead from "./../assets/images/Team/Production/tedx_lead.jpg";
+import Prod_Co_Lead from "./../assets/images/Team/Production/tedx_co_lead.jpeg";
+import Prod_Mem1 from "./../assets/images/Team/Production/tedx_mem1.png";
+import Prod_Mem2 from "./../assets/images/Team/Production/tedx_mem2.png";
+import Prod_Mem3 from "./../assets/images/Team/Production/tedx_mem3.png";
+import Prod_Mem4 from "./../assets/images/Team/Production/tedx_mem4.jpg";
+import Prod_Vol from "./../assets/images/Team/Production/tedx_volunteer.png";
 // Design Team Images
-import Design_Lead from "./../assets/images/Team/Design/Lead.jpg";
-import Design_Co_Lead from "./../assets/images/Team/Design/Co_Lead.png";
-import Design_Mem from "./../assets/images/Team/Design/Member.jpg";
+import Design_Lead from "./../assets/images/Team/Design/tedx_lead.jpg";
+import Design_Co_Lead from "./../assets/images/Team/Design/tedx_co_lead.png";
+import Design_Mem from "./../assets/images/Team/Design/tedx_member.jpg";
 //Technical Team Images
-import Tech_Co_Lead from "./../assets/images/Team/Technical/Co_Lead.jpg";
-import Tech_Lead from "./../assets/images/Team/Technical/Lead.jpeg";
-import Tech_Mem from "./../assets/images/Team/Technical/Member.jpg";
+import Tech_Co_Lead from "./../assets/images/Team/Technical/tedx_co_lead.jpg";
+import Tech_Lead from "./../assets/images/Team/Technical/tedx_lead.jpeg";
+import Tech_Mem from "./../assets/images/Team/Technical/tedx_member.jpg";
 //Hospitality Team Images
-import Hosp_Lead from "./../assets/images/Team/Hospitality/Lead.jpg";
-import Hosp_Co_Lead from "./../assets/images/Team/Hospitality/Co_Lead.jpg";
-import Hosp_Mem1 from "./../assets/images/Team/Hospitality/Member1.jpg";
-import Hosp_Mem2 from "./../assets/images/Team/Hospitality/Member2.jpg";
-import Hosp_Mem3 from "./../assets/images/Team/Hospitality/Member3.jpg";
-import Hosp_Vol1 from "./../assets/images/Team/Hospitality/Volunteer1.jpeg";
-import Hosp_Vol2 from "./../assets/images/Team/Hospitality/Volunteer2.jpeg";
-import Hosp_Vol3 from "./../assets/images/Team/Hospitality/Volunteer3.jpg";
-import Hosp_Vol4 from "./../assets/images/Team/Hospitality/Volunteer4.jpg";
+import Hosp_Lead from "./../assets/images/Team/Hospitality/tedx_lead.jpg";
+import Hosp_Co_Lead from "./../assets/images/Team/Hospitality/tedx_co_lead.jpg";
+import Hosp_Mem1 from "./../assets/images/Team/Hospitality/tedx_member1.jpg";
+import Hosp_Mem2 from "./../assets/images/Team/Hospitality/tedx_member2.jpg";
+import Hosp_Mem3 from "./../assets/images/Team/Hospitality/tedx_member3.jpg";
+import Hosp_Vol1 from "./../assets/images/Team/Hospitality/tedx_volunteer1.jpeg";
+import Hosp_Vol2 from "./../assets/images/Team/Hospitality/tedx_volunteer2.jpeg";
+import Hosp_Vol3 from "./../assets/images/Team/Hospitality/tedx_volunteer3.jpg";
+import Hosp_Vol4 from "./../assets/images/Team/Hospitality/tedx_volunteer4.jpg";
 //Marketing and Operations Team Images
-import Mark_Lead from "./../assets/images/Team/Marketing/Lead.jpg";
-import Mark_Co_Lead from "./../assets/images/Team/Marketing/Co_Lead.jpg";
-import Mark_Mem from "./../assets/images/Team/Marketing/Member.jpg";
-import Mark_Vol1 from "./../assets/images/Team/Marketing/Volunteer1.jpg";
-import Mark_Vol2 from "./../assets/images/Team/Marketing/Volunteer2.jpg";
-import Mark_Vol3 from "./../assets/images/Team/Marketing/Volunteer3.jpg";
-import Mark_Vol4 from "./../assets/images/Team/Marketing/Volunteer4.jpg";
-import Mark_Vol5 from "./../assets/images/Team/Marketing/Volunteer5.jpg";
+import Mark_Lead from "./../assets/images/Team/Marketing/tedx_lead.jpg";
+import Mark_Co_Lead from "./../assets/images/Team/Marketing/tedx_co_lead.jpg";
+import Mark_Mem from "./../assets/images/Team/Marketing/tedx_member.jpg";
+import Mark_Vol1 from "./../assets/images/Team/Marketing/tedx_volunteer1.jpg";
+import Mark_Vol2 from "./../assets/images/Team/Marketing/tedx_volunteer2.jpg";
+import Mark_Vol3 from "./../assets/images/Team/Marketing/tedx_volunteer3.jpg";
+import Mark_Vol4 from "./../assets/images/Team/Marketing/tedx_volunteer4.jpg";
+import Mark_Vol5 from "./../assets/images/Team/Marketing/tedx_volunteer5.jpg";
 
 const speakers = [
   {
@@ -80,8 +80,7 @@ const speakers = [
     name: "Divya Pabolu",
     role: "Organiser",
     team: "Organising Team",
-    description:
-      "Manages overall event planning, coordination, and execution.",
+    description: "Manages overall event planning, coordination, and execution.",
     image: Organizer,
   },
   {
@@ -107,8 +106,7 @@ const speakers = [
     name: "Akash Mallareddy",
     role: "Curator",
     team: "Organising Team",
-    description:
-      "Curates event content, sessions, and speaker coordination.",
+    description: "Curates event content, sessions, and speaker coordination.",
     image: Curator,
   },
 
@@ -145,8 +143,7 @@ const speakers = [
     name: "Kandula Srikar",
     role: "Member",
     team: "Communication and Production",
-    description:
-      "Supports production activities and communication execution.",
+    description: "Supports production activities and communication execution.",
     image: Prod_Mem3,
   },
   {
@@ -163,8 +160,7 @@ const speakers = [
     name: "Mulakala Naga Vasanth Kumar",
     role: "Member",
     team: "Communication and Production",
-    description:
-      "Supports communication tasks and production coordination.",
+    description: "Supports communication tasks and production coordination.",
     image: Prod_Mem4,
   },
   {
@@ -183,8 +179,7 @@ const speakers = [
     name: "Praveen",
     role: "Lead",
     team: "Design Team",
-    description:
-      "Leads visual design, branding, and creative direction.",
+    description: "Leads visual design, branding, and creative direction.",
     image: Design_Lead,
   },
   {
@@ -192,8 +187,7 @@ const speakers = [
     name: "Penmatsa Chandu",
     role: "Co-Lead",
     team: "Design Team",
-    description:
-      "Assists in graphic design and creative asset development.",
+    description: "Assists in graphic design and creative asset development.",
     image: Design_Co_Lead,
   },
   {
@@ -201,8 +195,7 @@ const speakers = [
     name: "Ch. J. V. Siddhartha",
     role: "Member",
     team: "Design Team",
-    description:
-      "Supports creative execution and design deliverables.",
+    description: "Supports creative execution and design deliverables.",
     image: Design_Mem,
   },
 
@@ -221,8 +214,7 @@ const speakers = [
     name: "Srinivas",
     role: "Co-Lead",
     team: "Hospitality Team",
-    description:
-      "Supports hospitality management and operational execution.",
+    description: "Supports hospitality management and operational execution.",
     image: Hosp_Co_Lead,
   },
   {
@@ -230,8 +222,7 @@ const speakers = [
     name: "Ch. A. S. M. S. Kartheek",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Assists in hospitality operations and guest services.",
+    description: "Assists in hospitality operations and guest services.",
     image: Hosp_Mem1,
   },
   {
@@ -239,8 +230,7 @@ const speakers = [
     name: "Vivek Sadhu",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Manages guest arrangements and hospitality coordination.",
+    description: "Manages guest arrangements and hospitality coordination.",
     image: Hosp_Mem2,
   },
   {
@@ -248,8 +238,7 @@ const speakers = [
     name: "Meruga Manasa Siri",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Supports hospitality planning and coordination.",
+    description: "Supports hospitality planning and coordination.",
     image: Hosp_Mem3,
   },
   {
@@ -257,8 +246,7 @@ const speakers = [
     name: "Mounika Mopidevi",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Volunteers in hospitality services and guest support.",
+    description: "Volunteers in hospitality services and guest support.",
     image: Hosp_Vol1,
   },
   {
@@ -266,8 +254,7 @@ const speakers = [
     name: "Lakshman",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Assists in on-ground hospitality operations.",
+    description: "Assists in on-ground hospitality operations.",
     image: Hosp_Vol2,
   },
   {
@@ -275,8 +262,7 @@ const speakers = [
     name: "Shanmukha",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Provides support for hospitality and logistics.",
+    description: "Provides support for hospitality and logistics.",
     image: Hosp_Vol3,
   },
   {
@@ -284,8 +270,7 @@ const speakers = [
     name: "Abhi",
     role: "Member",
     team: "Hospitality Team",
-    description:
-      "Supports hospitality team during event operations.",
+    description: "Supports hospitality team during event operations.",
     image: Hosp_Vol4,
   },
 
@@ -295,8 +280,7 @@ const speakers = [
     name: "Dinesh Yallabandi",
     role: "Lead",
     team: "Marketing and Operations",
-    description:
-      "Leads marketing strategy and operational planning.",
+    description: "Leads marketing strategy and operational planning.",
     image: Mark_Lead,
   },
   {
@@ -304,8 +288,7 @@ const speakers = [
     name: "Veeravalli Subash",
     role: "Co-Lead",
     team: "Marketing and Operations",
-    description:
-      "Supports marketing campaigns and operational coordination.",
+    description: "Supports marketing campaigns and operational coordination.",
     image: Mark_Co_Lead,
   },
   {
@@ -313,8 +296,7 @@ const speakers = [
     name: "Chaitanya Gubbala",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Handles marketing activities and event operations.",
+    description: "Handles marketing activities and event operations.",
     image: Mark_Mem,
   },
   {
@@ -322,8 +304,7 @@ const speakers = [
     name: "Swathi Sopeti",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Volunteers in marketing promotions and outreach.",
+    description: "Volunteers in marketing promotions and outreach.",
     image: Mark_Vol1,
   },
   {
@@ -331,8 +312,7 @@ const speakers = [
     name: "Chandu Bandarupalli",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Supports marketing campaigns and coordination.",
+    description: "Supports marketing campaigns and coordination.",
     image: Mark_Vol2,
   },
   {
@@ -340,8 +320,7 @@ const speakers = [
     name: "JayaSri Thota",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Assists in promotional and marketing activities.",
+    description: "Assists in promotional and marketing activities.",
     image: Mark_Vol3,
   },
   {
@@ -349,8 +328,7 @@ const speakers = [
     name: "Ganesh Botcha",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Supports operational execution and logistics.",
+    description: "Supports operational execution and logistics.",
     image: Mark_Vol4,
   },
   {
@@ -358,8 +336,7 @@ const speakers = [
     name: "Harika Sakalabattula",
     role: "Member",
     team: "Marketing and Operations",
-    description:
-      "Volunteers in marketing and outreach initiatives.",
+    description: "Volunteers in marketing and outreach initiatives.",
     image: Mark_Vol5,
   },
 
@@ -387,12 +364,10 @@ const speakers = [
     name: "T K Mojesh",
     role: "Member",
     team: "Technical Team",
-    description:
-      "Contributes to development, testing, and technical support.",
+    description: "Contributes to development, testing, and technical support.",
     image: Tech_Mem,
   },
 ];
-
 
 export default function Team() {
   const teamGroups = speakers.reduce((groups, speaker) => {
