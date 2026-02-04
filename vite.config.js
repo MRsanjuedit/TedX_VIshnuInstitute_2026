@@ -11,18 +11,16 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./",
+  base: "/",
   build: {
     assetsInlineLimit: 0,
+    outDir: "dist",
+    assetsDir: "assets",
     rollupOptions: {
       output: {
-        assetFileNames: (assetInfo) => {
-          let extType = assetInfo.name.split(".").at(1);
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = "images";
-          }
-          return `assets/${extType}/[name]-[hash][extname]`;
-        },
+        assetFileNames: "assets/[name]-[hash][extname]",
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js",
       },
     },
   },
