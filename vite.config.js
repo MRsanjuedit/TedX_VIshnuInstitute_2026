@@ -11,9 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/",
   build: {
-    assetsInlineLimit: 0,
     outDir: "dist",
     assetsDir: "assets",
     rollupOptions: {
