@@ -6,12 +6,12 @@ import Principal from "./../assets/images/team/core/tedx_principal.jpg";
 import Vice_Principal from "./../assets/images/team/core/tedx_vice_principal.jpg";
 //Organizing Team Images
 import Organizer from "./../assets/images/team/organizers/tedx_organizer.jpg";
-import Co_Org from "./../assets/images/team/organizers/tedx_co_org.jpeg";
+import Co_Org from "./../assets/images/team/organizers/tedx_co_org.jpg";
 import Co_Org1 from "./../assets/images/team/organizers/tedx_co_org1.jpg";
-import Curator from "./../assets/images/team/organizers/tedx_curator.jpeg";
+import Curator from "./../assets/images/team/organizers/tedx_curator.jpg";
 //Production and Communication Team Images
 import Prod_Lead from "./../assets/images/team/production/tedx_lead.jpg";
-import Prod_Co_Lead from "./../assets/images/team/production/tedx_co_lead.jpeg";
+import Prod_Co_Lead from "./../assets/images/team/production/tedx_co_lead.jpg";
 import Prod_Mem1 from "./../assets/images/team/production/tedx_mem1.png";
 import Prod_Mem2 from "./../assets/images/team/production/tedx_mem2.png";
 import Prod_Mem3 from "./../assets/images/team/production/tedx_mem3.png";
@@ -23,7 +23,7 @@ import Design_Co_Lead from "./../assets/images/team/design/tedx_co_lead.png";
 import Design_Mem from "./../assets/images/team/design/tedx_member.jpg";
 //Technical Team Images
 import Tech_Co_Lead from "./../assets/images/team/technical/tedx_co_lead.jpg";
-import Tech_Lead from "./../assets/images/team/technical/tedx_lead.jpeg";
+import Tech_Lead from "./../assets/images/team/technical/tedx_lead.jpg";
 import Tech_Mem from "./../assets/images/team/technical/tedx_member.jpg";
 //Hospitality Team Images
 import Hosp_Lead from "./../assets/images/team/hospitality/tedx_lead.jpg";
@@ -31,8 +31,8 @@ import Hosp_Co_Lead from "./../assets/images/team/hospitality/tedx_co_lead.jpg";
 import Hosp_Mem1 from "./../assets/images/team/hospitality/tedx_member1.jpg";
 import Hosp_Mem2 from "./../assets/images/team/hospitality/tedx_member2.jpg";
 import Hosp_Mem3 from "./../assets/images/team/hospitality/tedx_member3.jpg";
-import Hosp_Vol1 from "./../assets/images/team/hospitality/tedx_volunteer1.jpeg";
-import Hosp_Vol2 from "./../assets/images/team/hospitality/tedx_volunteer2.jpeg";
+import Hosp_Vol1 from "./../assets/images/team/hospitality/tedx_volunteer1.jpg";
+import Hosp_Vol2 from "./../assets/images/team/hospitality/tedx_volunteer2.jpg";
 import Hosp_Vol3 from "./../assets/images/team/hospitality/tedx_volunteer3.jpg";
 import Hosp_Vol4 from "./../assets/images/team/hospitality/tedx_volunteer4.jpg";
 //Marketing and Operations Team Images
