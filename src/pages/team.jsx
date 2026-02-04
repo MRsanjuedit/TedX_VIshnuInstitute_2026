@@ -1,49 +1,49 @@
 import React from "react";
 import Card from "./../components/common/card";
 //Core Team Images
-import Chairman from "./../assets/images/Team/Core/tedx_chairman.jpg";
-import Principal from "./../assets/images/Team/Core/tedx_principal.jpg";
-import Vice_Principal from "./../assets/images/Team/Core/tedx_vice_principal.jpg";
+import Chairman from "./../assets/images/Team/core/tedx_chairman.jpg";
+import Principal from "./../assets/images/Team/core/tedx_principal.jpg";
+import Vice_Principal from "./../assets/images/Team/core/tedx_vice_principal.jpg";
 //Organizing Team Images
-import Organizer from "./../assets/images/Team/Organizers/tedx_organizer.jpg";
-import Co_Org from "./../assets/images/Team/Organizers/tedx_co_org.jpeg";
-import Co_Org1 from "./../assets/images/Team/Organizers/tedx_co_org1.jpg";
-import Curator from "./../assets/images/Team/Organizers/tedx_curator.jpeg";
+import Organizer from "./../assets/images/Team/organizers/tedx_organizer.jpg";
+import Co_Org from "./../assets/images/Team/organizers/tedx_co_org.jpeg";
+import Co_Org1 from "./../assets/images/Team/organizers/tedx_co_org1.jpg";
+import Curator from "./../assets/images/Team/organizers/tedx_curator.jpeg";
 //Production and Communication Team Images
-import Prod_Lead from "./../assets/images/Team/Production/tedx_lead.jpg";
-import Prod_Co_Lead from "./../assets/images/Team/Production/tedx_co_lead.jpeg";
-import Prod_Mem1 from "./../assets/images/Team/Production/tedx_mem1.png";
-import Prod_Mem2 from "./../assets/images/Team/Production/tedx_mem2.png";
-import Prod_Mem3 from "./../assets/images/Team/Production/tedx_mem3.png";
-import Prod_Mem4 from "./../assets/images/Team/Production/tedx_mem4.jpg";
-import Prod_Vol from "./../assets/images/Team/Production/tedx_volunteer.png";
+import Prod_Lead from "./../assets/images/Team/production/tedx_lead.jpg";
+import Prod_Co_Lead from "./../assets/images/Team/production/tedx_co_lead.jpeg";
+import Prod_Mem1 from "./../assets/images/Team/production/tedx_mem1.png";
+import Prod_Mem2 from "./../assets/images/Team/production/tedx_mem2.png";
+import Prod_Mem3 from "./../assets/images/Team/production/tedx_mem3.png";
+import Prod_Mem4 from "./../assets/images/Team/production/tedx_mem4.jpg";
+import Prod_Vol from "./../assets/images/Team/production/tedx_volunteer.png";
 // Design Team Images
-import Design_Lead from "./../assets/images/Team/Design/tedx_lead.jpg";
-import Design_Co_Lead from "./../assets/images/Team/Design/tedx_co_lead.png";
-import Design_Mem from "./../assets/images/Team/Design/tedx_member.jpg";
+import Design_Lead from "./../assets/images/Team/design/tedx_lead.jpg";
+import Design_Co_Lead from "./../assets/images/Team/design/tedx_co_lead.png";
+import Design_Mem from "./../assets/images/Team/design/tedx_member.jpg";
 //Technical Team Images
-import Tech_Co_Lead from "./../assets/images/Team/Technical/tedx_co_lead.jpg";
-import Tech_Lead from "./../assets/images/Team/Technical/tedx_lead.jpeg";
-import Tech_Mem from "./../assets/images/Team/Technical/tedx_member.jpg";
+import Tech_Co_Lead from "./../assets/images/Team/technical/tedx_co_lead.jpg";
+import Tech_Lead from "./../assets/images/Team/technical/tedx_lead.jpeg";
+import Tech_Mem from "./../assets/images/Team/technical/tedx_member.jpg";
 //Hospitality Team Images
-import Hosp_Lead from "./../assets/images/Team/Hospitality/tedx_lead.jpg";
-import Hosp_Co_Lead from "./../assets/images/Team/Hospitality/tedx_co_lead.jpg";
-import Hosp_Mem1 from "./../assets/images/Team/Hospitality/tedx_member1.jpg";
-import Hosp_Mem2 from "./../assets/images/Team/Hospitality/tedx_member2.jpg";
-import Hosp_Mem3 from "./../assets/images/Team/Hospitality/tedx_member3.jpg";
-import Hosp_Vol1 from "./../assets/images/Team/Hospitality/tedx_volunteer1.jpeg";
-import Hosp_Vol2 from "./../assets/images/Team/Hospitality/tedx_volunteer2.jpeg";
-import Hosp_Vol3 from "./../assets/images/Team/Hospitality/tedx_volunteer3.jpg";
-import Hosp_Vol4 from "./../assets/images/Team/Hospitality/tedx_volunteer4.jpg";
+import Hosp_Lead from "./../assets/images/Team/hospitality/tedx_lead.jpg";
+import Hosp_Co_Lead from "./../assets/images/Team/hospitality/tedx_co_lead.jpg";
+import Hosp_Mem1 from "./../assets/images/Team/hospitality/tedx_member1.jpg";
+import Hosp_Mem2 from "./../assets/images/Team/hospitality/tedx_member2.jpg";
+import Hosp_Mem3 from "./../assets/images/Team/hospitality/tedx_member3.jpg";
+import Hosp_Vol1 from "./../assets/images/Team/hospitality/tedx_volunteer1.jpeg";
+import Hosp_Vol2 from "./../assets/images/Team/hospitality/tedx_volunteer2.jpeg";
+import Hosp_Vol3 from "./../assets/images/Team/hospitality/tedx_volunteer3.jpg";
+import Hosp_Vol4 from "./../assets/images/Team/hospitality/tedx_volunteer4.jpg";
 //Marketing and Operations Team Images
-import Mark_Lead from "./../assets/images/Team/Marketing/tedx_lead.jpg";
-import Mark_Co_Lead from "./../assets/images/Team/Marketing/tedx_co_lead.jpg";
-import Mark_Mem from "./../assets/images/Team/Marketing/tedx_member.jpg";
-import Mark_Vol1 from "./../assets/images/Team/Marketing/tedx_volunteer1.jpg";
-import Mark_Vol2 from "./../assets/images/Team/Marketing/tedx_volunteer2.jpg";
-import Mark_Vol3 from "./../assets/images/Team/Marketing/tedx_volunteer3.jpg";
-import Mark_Vol4 from "./../assets/images/Team/Marketing/tedx_volunteer4.jpg";
-import Mark_Vol5 from "./../assets/images/Team/Marketing/tedx_volunteer5.jpg";
+import Mark_Lead from "./../assets/images/Team/marketing/tedx_lead.jpg";
+import Mark_Co_Lead from "./../assets/images/Team/marketing/tedx_co_lead.jpg";
+import Mark_Mem from "./../assets/images/Team/marketing/tedx_member.jpg";
+import Mark_Vol1 from "./../assets/images/Team/marketing/tedx_volunteer1.jpg";
+import Mark_Vol2 from "./../assets/images/Team/marketing/tedx_volunteer2.jpg";
+import Mark_Vol3 from "./../assets/images/Team/marketing/tedx_volunteer3.jpg";
+import Mark_Vol4 from "./../assets/images/Team/marketing/tedx_volunteer4.jpg";
+import Mark_Vol5 from "./../assets/images/Team/marketing/tedx_volunteer5.jpg";
 
 const speakers = [
   {

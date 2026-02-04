@@ -4,7 +4,7 @@ import bgVideoMobile from "../assets/videos/home_bg_mobile.mp4";
 import Loader from "../components/loaders/loading _spinner";
 import Countdown from "../components/common/countdown";
 import Schedule from "../components/common/schedule";
-import EventLogo from "../assets/images/Tedx/tedx_event_image.jpeg";
+import EventLogo from "../assets/images/tedx/tedx_event_image.jpeg";
 import { useState } from "react";
 
 function Home() {

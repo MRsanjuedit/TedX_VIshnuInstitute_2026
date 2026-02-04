@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const images = Object.values(
   import.meta.glob(
-    "../assets/images/Gallery/tedx_*.{jpg,jpeg,png,JPG,JPEG,PNG}",
+    "../assets/images/gallery/tedx_*.{jpg,jpeg,png,JPG,JPEG,PNG}",
     {
       eager: true,
       import: "default",
