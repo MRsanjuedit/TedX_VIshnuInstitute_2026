@@ -1,5 +1,4 @@
 import logo from "../assets/images/tedx_logo.jpg";
-import logoMobile from "../assets/images/tedx_logo_mobile.png";
 import { NavLink, useLocation } from "react-router-dom";
 import Button from "../components/ui/button";
 import {
@@ -13,8 +12,8 @@ import { useState } from "react";
 
 // Instructions for ticket purchase
 const ticketInstructions = [
-  "This is only for Vishnu Institute of Technology students only",
-  "Once payment is done, money won't be refunded",
+  "Registration is exclusively for Vishnu Institute of Technology students.",
+  "All payments are final and non-refundable.",
 ];
 
 function Navbar() {
@@ -67,9 +66,8 @@ function Navbar() {
         <img
           src={logo}
           alt="Logo"
-          className="hidden md:block h-10 lg:h-10 xl:h-12"
+          className="h-8 sm:h-9 md:h-10 lg:h-10 xl:h-12"
         />
-        <img src={logoMobile} alt="Logo" className="md:hidden h-12" />
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-4 xl:gap-8 items-center">
