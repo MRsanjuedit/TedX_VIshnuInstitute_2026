@@ -52,7 +52,7 @@ function Navbar() {
     { label: "About", path: "/about" },
     { label: "Speakers", path: "/speakers" },
     { label: "Team", path: "/team" },
-    { label: "Venue", path: "/venue" },
+    { label: "Venue", path: "/" },
     { label: "Gallery", path: "/gallery" },
     { label: "Editions", path: "/editions" },
   ];
@@ -211,9 +211,12 @@ function Navbar() {
             <NavLink
               key={item.path}
               to={item.path}
-              onClick={() => {
-                setMobileMenu(false);
-                item.label === "Venue" ? handleVenueClick() : handleNavClick();
+              onClick={(e) => {
+                if (item.label === "Venue") {
+                  handleVenueClick(e);
+                } else {
+                  handleNavClick();
+                }
               }}
               className={({ isActive }) =>
                 item.label === "Venue"
