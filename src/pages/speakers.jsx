@@ -2,29 +2,30 @@ import React from "react";
 import Card from "./../components/common/card";
 
 const speakers = [
+
   {
     id: 1,
+    name: "Manohar Chivukula ",
+    role: "Founder & Influencer, Mencyclopedia",
+    team: "TEDx Speakers",
+    description: "Manohar Chivukula is the founder of Mencyclopedia, a trailblazing platform that brought men’s selfcare, grooming, fashion and lifestyle conversations to Telugu-speaking audiences where such topics were once considered taboo. As one of the first in South India to break into this space, he set out to dismantle stereotypes that framed self-care as unnecessary or unmanly. Driven by a clear mission to make men better Manohar simplifies science into actionable insights that go beyond grooming, emphasizing awareness, discipline, and self-respect as foundations of modern masculinity. Through clarity and consistency, he continues to reshape how men in South India view self-care and personal growth.",
+    image: "/speakers/Manohar.JPG",
+  },
+  {
+    id: 2,
+    name: "Ashile Sharmila Anand",
+    role: "Founder & Author, The Ashile Sharmila Anand Foundation",
+    team: "TEDx Speakers",
+    description: "Ashile is a 22-year-old entrepreneur, and internationally certified trainer, deeply committed to working with children and young adults. She is the Co-Founder of Aasha Academia, a platform focused on academics and personal development for children. She is the author of the bestselling book I Miss Understood, and has trained over 10,000 students across schools and colleges in India. Ashile has conducted workshops for institutions such as the London School of Economics, AIIMS, Barclays, and several leading educational institutions across the country & abroad. Currently a student at the London School of Economics, Ashile combines academic rigour with real-world impact. In recognition of her work, she was recently honoured with the \"Inspiring Annette Award\" by Rotary. Her Mission is to transform the education system that creates young leaders that shine their light so bright that the world becomes a happier, better place.",
+    image: "/speakers/Ashile.jpg",
+  },
+    {
+    id: 3,
     name: "Abhigna Reddy",
     role: "Influencer",
     team: "TEDx Speakers",
     description: "Lakki Reddy Abhigna Reddy is a full-time content creator who believes that \"life is meant to be celebrated, not just survived\". She began her journey by completing engineering in Artificial Intelligence and Machine Learning with a research background and is currently pursuing law. Through her digital storytelling, she shares moments from lifestyle, skincare, travel and personal growth often alongside her super-loving family, fondly embraced by audiences for their warmth and positivity. Her online internet family loves her so deeply that they embrace her as their own, treating her like a member of their home, while many fondly call her akka an elder sister who cares wholeheartedly. Known for her girl-next-door energy, Abhigna believes life isn't a race toward destinations but a collection of moments meant to be lived fully. After many experiences, she chose to slow down and truly live, reminding others that this one life deserves joy, presence, and purpose.",
     image: "/speakers/Abhigna.PNG",
-  },
-  {
-    id: 2,
-    name: "Manohar Chivukula ",
-    role: "Founder & Influencer, Mencyclopedia",
-    team: "TEDx Speakers",
-    description: "Manohar Chivukula is the founder of Mencyclopedia, a trailblazing platform that brought men’s selfcare, grooming, fashion and lifestyle conversations to Telugu-speaking audiences where such topics were once considered taboo. As one of the first in South India to break into this space, he set out to dismantle stereotypes that framed self-care as unnecessary or unmanly. Driven by a clear mission to make men better Manohar simplifies science into actionable insights that go beyond grooming, emphasizing awareness, discipline, and self-respect as foundations of modern masculinity. Through clarity and consistency, he continues to reshape how men in South India view self-care and personal growth.",
-    image: "/speakers/Ashile.jpg",
-  },
-  {
-    id: 3,
-    name: "Ashile Sharmila Anand",
-    role: "Founder & Author, The Ashile Sharmila Anand Foundation",
-    team: "TEDx Speakers",
-    description: "Ashile is a 22-year-old entrepreneur, and internationally certified trainer, deeply committed to working with children and young adults. She is the Co-Founder of Aasha Academia, a platform focused on academics and personal development for children. She is the author of the bestselling book I Miss Understood, and has trained over 10,000 students across schools and colleges in India. Ashile has conducted workshops for institutions such as the London School of Economics, AIIMS, Barclays, and several leading educational institutions across the country & abroad. Currently a student at the London School of Economics, Ashile combines academic rigour with real-world impact. In recognition of her work, she was recently honoured with the \"Inspiring Annette Award\" by Rotary. Her Mission is to transform the education system that creates young leaders that shine their light so bright that the world becomes a happier, better place.",
-    image: "/speakers/Manohar.JPG",
   },
 ];
 
