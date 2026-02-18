@@ -67,7 +67,7 @@ function Home() {
         <div className="py-8 px-4 flex flex-col items-center justify-center bg-black">
           <h1 className="text-4xl font-bold text-center text-white mb-2 md:text-7xl drop-shadow-[0_4px_10px_rgba(0,0,0,0.45)] [text-shadow:0px_4px_10px_rgba(0,0,0,0.5)]">
             <span className="">Shifting </span>
-            <span className="">Realems</span>
+            <span className="">Realms</span>
           </h1>
           <div className="h-1 w-48 bg-red-600 mx-auto rounded-full my-2" />
           <p className="text-white md:text-2xl text-lg font-semibold text-center drop-shadow-lg">
