@@ -11,10 +11,26 @@ import {
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+// Instructions for ticket purchase
+const ticketInstructions = [
+  "This is only for Vishnu Institute of Technology students only",
+  "Once payment is done, money won't be refunded",
+];
+
 function Navbar() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [showTicketModal, setShowTicketModal] = useState(false);
+
+  const handleBuyTickets = () => {
+    setShowTicketModal(true);
+    setMobileMenu(false);
+  };
+
+  const handleContinueToRegistration = () => {
+    window.location.href = "https://tedx-regestrations.vercel.app/#/registration";
+  };
 
   const handleVenueClick = (e) => {
     e.preventDefault();
@@ -121,7 +137,7 @@ function Navbar() {
 
         {/* Desktop Button */}
         <div className="hidden lg:block">
-          <Button label="Buy Tickets" onClick={() => {}} />
+          <Button label="Buy Tickets" onClick={handleBuyTickets} />
         </div>
 
         {/* Mobile Hamburger */}
@@ -215,9 +231,46 @@ function Navbar() {
         )}
 
         {/* Mobile Button */}
-        <Button label="Buy Tickets" onClick={() => {}} />
+        <Button label="Buy Tickets" onClick={handleBuyTickets} />
       </div>
-    </div>
+      {/* Ticket Purchase Modal */}
+      {showTicketModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="bg-black border-2 border-red-600 rounded-lg shadow-2xl w-11/12 max-w-md p-6 md:p-8">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-xl md:text-2xl font-bold text-white">
+                Important Instructions
+              </h2>
+              <button
+                onClick={() => setShowTicketModal(false)}
+                className="text-gray-400 hover:text-white transition"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            <div className="space-y-4 mb-8">
+              {ticketInstructions.map((instruction, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="text-gray-300 text-base md:text-lg font-medium">
+                    {index + 1}.
+                  </span>
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                    {instruction}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <button
+              onClick={handleContinueToRegistration}
+              className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      )}    </div>
   );
 }
 

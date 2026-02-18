@@ -23,6 +23,7 @@ function Home() {
         <video
           className="w-full h-full object-cover"
           autoPlay
+          loop
           muted
           playsInline
           onCanPlay={handleVideoCanPlay}
