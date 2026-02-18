@@ -27,6 +27,50 @@ const speakers = [
     description: "Lakki Reddy Abhigna Reddy is a full-time content creator who believes that \"life is meant to be celebrated, not just survived\". She began her journey by completing engineering in Artificial Intelligence and Machine Learning with a research background and is currently pursuing law. Through her digital storytelling, she shares moments from lifestyle, skincare, travel and personal growth often alongside her super-loving family, fondly embraced by audiences for their warmth and positivity. Her online internet family loves her so deeply that they embrace her as their own, treating her like a member of their home, while many fondly call her akka an elder sister who cares wholeheartedly. Known for her girl-next-door energy, Abhigna believes life isn't a race toward destinations but a collection of moments meant to be lived fully. After many experiences, she chose to slow down and truly live, reminding others that this one life deserves joy, presence, and purpose.",
     image: "/speakers/Abhigna.PNG",
   },
+  {
+    id: 4,
+    name: "Speaker 4",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  {
+    id: 5,
+    name: "Speaker 5",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  {
+    id: 6,
+    name: "Speaker 6",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  {
+    id: 7,
+    name: "Speaker 7",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  {
+    id: 8,
+    name: "Speaker 8",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  {
+    id: 9,
+    name: "Speaker 9",
+    role: "Speaker",
+    team: "TEDx Speakers",
+    description: "To be announced soon.",
+  },
+  
+
 ];
 
 export default function Speakers() {
