@@ -104,7 +104,7 @@ function Navbar() {
 
                   <DropdownMenuItem asChild>
                     <a
-                      href="https://www.tedxvishnuinstitute.in/"
+                      href="https://tedxvishuinstitute-season2.vercel.app/"
                       className="block w-full text-white px-3 py-2 text-base lg:text-base xl:text-base font-medium hover:bg-red-600"
                     >
                       Season 2
@@ -199,7 +199,7 @@ function Navbar() {
 
                 <DropdownMenuItem asChild>
                   <a
-                    href="https://www.tedxvishnuinstitute.in/"
+                    href="https://tedxvishuinstitute-season2.vercel.app/"
                     className="block w-full text-white px-3 py-2 text-lg font-medium hover:bg-red-600"
                   >
                     Season 2
