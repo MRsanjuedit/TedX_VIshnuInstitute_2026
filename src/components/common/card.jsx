@@ -45,8 +45,8 @@ const Card = ({ data }) => {
             </p>
           </div>
 
-          <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
-            <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+          <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100 max-h-48 overflow-y-auto pr-2">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
               {data.description}
             </p>
           </div>
