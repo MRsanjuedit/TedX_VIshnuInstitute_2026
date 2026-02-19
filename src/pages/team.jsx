@@ -6,11 +6,11 @@ import Principal from "./../assets/images/team/core/tedx_principal.jpg";
 import Vice_Principal from "./../assets/images/team/core/tedx_vice_principal.jpg";
 //Organizing Team Images
 import Organizer from "./../assets/images/team/organizers/tedx_organizer.jpg";
-import Co_Org from "./../assets/images/team/organizers/tedx_co_org.jpg";
-import Co_Org1 from "./../assets/images/team/organizers/tedx_co_org1.jpg";
+import Co_Org from "./../assets/images/team/organizers/tedx_co_org.jpeg";
+import Co_Org1 from "./../assets/images/team/organizers/tedx_co_org1.png";
 import Curator from "./../assets/images/team/organizers/tedx_curator.jpg";
 //Production and Communication Team Images
-import Prod_Lead from "./../assets/images/team/production/tedx_lead.jpg";
+import Prod_Lead from "./../assets/images/team/production/tedx_lead.jpeg";
 import Prod_Co_Lead from "./../assets/images/team/production/tedx_co_lead.jpg";
 import Prod_Mem1 from "./../assets/images/team/production/tedx_mem1.png";
 import Prod_Mem2 from "./../assets/images/team/production/tedx_mem2.png";
@@ -26,7 +26,7 @@ import Tech_Co_Lead from "./../assets/images/team/technical/tedx_co_lead.jpg";
 import Tech_Lead from "./../assets/images/team/technical/tedx_lead.jpg";
 import Tech_Mem from "./../assets/images/team/technical/tedx_member.jpg";
 //Hospitality Team Images
-import Hosp_Lead from "./../assets/images/team/hospitality/tedx_lead.jpg";
+import Hosp_Lead from "./../assets/images/team/hospitality/tedx_lead.jpeg";
 import Hosp_Co_Lead from "./../assets/images/team/hospitality/tedx_co_lead.jpg";
 import Hosp_Mem1 from "./../assets/images/team/hospitality/tedx_member1.jpg";
 import Hosp_Mem2 from "./../assets/images/team/hospitality/tedx_member2.jpg";
@@ -379,6 +379,16 @@ export default function Team() {
     return groups;
   }, {});
 
+  const teamOrder = [
+    "Core Team",
+    "Organising Team",
+    "Technical Team",
+    "Communication and Production",
+    "Design Team",
+    "Hospitality Team",
+    "Marketing and Operations",
+  ];
+
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center p-8 md:p-12 font-sans">
       <div className="w-full max-w-7xl my-12">
@@ -399,21 +409,27 @@ export default function Team() {
         </div>
       </div>
 
-      {Object.entries(teamGroups).map(([teamName, members]) => (
-        <div key={teamName} className="w-full max-w-7xl mb-16">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-1 h-12 bg-red-600"></div>
-            <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-semibold">
-              {teamName}
-            </h3>
+      {teamOrder.map((teamName) => {
+        const members = teamGroups[teamName];
+        if (!members) return null;
+
+        return (
+          <div key={teamName} className="w-full max-w-7xl mb-16">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-1 h-12 bg-red-600"></div>
+              <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-semibold">
+                {teamName}
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+              {members.map((speaker) => (
+                <Card key={speaker.id} data={speaker} />
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-            {members.map((speaker) => (
-              <Card key={speaker.id} data={speaker} />
-            ))}
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
