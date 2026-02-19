@@ -48,18 +48,34 @@ const Card = ({ data }) => {
           </div>
 
           <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
-            <div className={showFullDescription ? "max-h-48 overflow-y-auto pr-2" : ""}>
-              <p className={`text-gray-300 text-sm leading-relaxed ${!showFullDescription ? 'line-clamp-4' : ''}`}>
-                {data.description}
-              </p>
-            </div>
-            {data.description && data.description.length > 200 && (
-              <button
-                onClick={() => setShowFullDescription(!showFullDescription)}
-                className="text-red-500 hover:text-red-400 text-xs font-semibold mt-2 transition-colors duration-200"
-              >
-                {showFullDescription ? "Show Less" : "Know More"}
-              </button>
+            {showFullDescription ? (
+              <div className="max-h-48 overflow-y-auto pr-2">
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {data.description}
+                </p>
+                {data.description && data.description.length > 200 && (
+                  <button
+                    onClick={() => setShowFullDescription(false)}
+                    className="text-red-500 hover:text-red-400 text-xs font-semibold mt-2 transition-colors duration-200"
+                  >
+                    Show Less
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div>
+                <p className="text-gray-300 text-sm leading-relaxed line-clamp-2">
+                  {data.description}
+                </p>
+                {data.description && data.description.length > 200 && (
+                  <button
+                    onClick={() => setShowFullDescription(true)}
+                    className="text-red-500 hover:text-red-400 text-sm font-semibold transition-colors duration-200 mt-1"
+                  >
+                    Know More
+                  </button>
+                )}
+              </div>
             )}
           </div>
         </div>
