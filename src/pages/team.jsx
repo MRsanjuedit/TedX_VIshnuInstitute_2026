@@ -7,7 +7,7 @@ import Vice_Principal from "./../assets/images/team/core/tedx_vice_principal.jpg
 //Organizing Team Images
 import Organizer from "./../assets/images/team/organizers/tedx_organizer.jpg";
 import Co_Org from "./../assets/images/team/organizers/tedx_co_org.jpeg";
-import Co_Org1 from "./../assets/images/team/organizers/tedx_co_org1.png";
+import Co_Org1 from "./../assets/images/team/organizers/tedx_co_org1.PNG";
 import Curator from "./../assets/images/team/organizers/tedx_curator.jpg";
 //Production and Communication Team Images
 import Prod_Lead from "./../assets/images/team/production/tedx_lead.jpeg";
