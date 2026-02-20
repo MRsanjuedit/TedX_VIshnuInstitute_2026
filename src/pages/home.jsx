@@ -77,6 +77,32 @@ function Home() {
         </div>
       </div>
 
+      <section className="w-full bg-black pt-6 pb-10 md:pt-8 md:pb-14 flex justify-center">
+        <div className="max-w-5xl px-6">
+          <div className="flex gap-6 items-start">
+            {/* Accent Line */}
+            <div className="hidden sm:block w-[3px] bg-red-600 rounded-full mt-2" />
+
+            <div className="w-full">
+              <p className="text-white text-xl md:text-2xl lg:text-3xl leading-relaxed font-medium text-left">
+                <span className="text-red-500 font-semibold">
+                  Shifting Realms
+                </span>{" "}
+                explores how ideas move us between different worlds of thought,
+                perspective, and possibility.
+              </p>
+
+              <p className="text-gray-300 text-lg md:text-xl lg:text-2xl mt-6 leading-relaxed text-left">
+                When perspectives shift, innovation begins — and even a single
+                idea can redefine the way we see reality.
+              </p>
+
+              <div className="mt-10 w-20 h-[2px] bg-red-600 rounded-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="flex flex-col mt-[-1px] mb-[-1px] overflow-x-hidden xl:flex-row w-full  lg:h-auto px-4 md:px-8 lg:px-20 py-8 lg:py-10 lg:pt-25 bg-black justify-center lg:justify-between items-center gap-8 lg:gap-4">
         <img
           src={EventLogo}
