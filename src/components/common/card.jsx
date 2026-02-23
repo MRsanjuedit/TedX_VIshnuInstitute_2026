@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const Card = ({ data }) => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
   return (
     <div className="group relative w-full h-[500px] rounded-3xl overflow-hidden bg-black ring-1 ring-white/10 hover:ring-red-600 transition-all duration-500 hover:shadow-[0_0_50px_rgba(220,38,38,0.3)]">
       <div className="absolute inset-0 w-full h-full">
@@ -46,9 +48,35 @@ const Card = ({ data }) => {
           </div>
 
           <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
-            <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-              {data.description}
-            </p>
+            {showFullDescription ? (
+              <div className="max-h-48 overflow-y-auto pr-2">
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {data.description}
+                </p>
+                {data.description && data.description.length > 200 && (
+                  <button
+                    onClick={() => setShowFullDescription(false)}
+                    className="text-red-500 hover:text-red-400 text-xs font-semibold mt-2 transition-colors duration-200"
+                  >
+                    Show Less
+                  </button>
+                )}
+              </div>
+            ) : (
+              <div>
+                <p className="text-gray-300 text-sm leading-relaxed line-clamp-2">
+                  {data.description}
+                </p>
+                {data.description && data.description.length > 200 && (
+                  <button
+                    onClick={() => setShowFullDescription(true)}
+                    className="text-red-500 hover:text-red-400 text-sm font-semibold transition-colors duration-200 mt-1"
+                  >
+                    Know More
+                  </button>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>
