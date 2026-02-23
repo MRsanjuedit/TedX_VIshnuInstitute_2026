@@ -239,7 +239,7 @@ function Navbar() {
             <button
               key={item.label}
               onClick={handleVenueClick}
-              className={`text-lg font-medium cursor-pointer ${
+              className={`text-lg font-medium cursor-pointer text-left w-full ${
                 venueActive ? "text-red-500 font-semibold" : "text-white"
               }`}
             >
