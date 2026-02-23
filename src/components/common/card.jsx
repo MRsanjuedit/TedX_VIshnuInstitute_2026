@@ -9,7 +9,7 @@ const Card = ({ data }) => {
           <img
             src={data.image}
             alt={data.name}
-            className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-in-out"
+            className="w-full h-full object-cover object-top opacity-100 group-hover:opacity-100 filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-in-out"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-black">
@@ -18,7 +18,7 @@ const Card = ({ data }) => {
         )}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-80 transition-opacity duration-500"></div>
 
       {/* 3. CONTENT LAYER */}
       <div className="absolute inset-0 flex flex-col justify-between p-6 z-10">

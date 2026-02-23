@@ -30,7 +30,7 @@ import Hosp_Lead from "./../assets/images/team/hospitality/tedx_lead.jpeg";
 import Hosp_Co_Lead from "./../assets/images/team/hospitality/tedx_co_lead.jpg";
 import Hosp_Mem1 from "./../assets/images/team/hospitality/tedx_member1.jpg";
 import Hosp_Mem2 from "./../assets/images/team/hospitality/tedx_member2.jpg";
-import Hosp_Mem3 from "./../assets/images/team/hospitality/tedx_member3.jpg";
+import Hosp_Mem3 from "./../assets/images/team/hospitality/tedx_member3.jpeg";
 import Hosp_Vol1 from "./../assets/images/team/hospitality/tedx_volunteer1.jpg";
 import Hosp_Vol2 from "./../assets/images/team/hospitality/tedx_volunteer2.jpg";
 import Hosp_Vol3 from "./../assets/images/team/hospitality/tedx_volunteer3.jpg";
@@ -235,7 +235,7 @@ const speakers = [
   },
   {
     id: 22,
-    name: "Meruga Manasa Siri",
+    name: "R Mahesh Babu",
     role: "Member",
     team: "Hospitality Team",
     description: "Supports hospitality planning and coordination.",
