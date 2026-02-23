@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "./../assets/images/tedx/tedx_image1.png";
-import image2 from "./../assets/images/tedx/tedx_image2.png";
-import image3 from "./../assets/images/tedx/tedx_image3.png";
+import image1 from "./../assets/images/tedx/tedx_image1.webp";
+import image2 from "./../assets/images/tedx/tedx_image2.webp";
+import image3 from "./../assets/images/tedx/tedx_image3.webp";
 
 function About() {
   return (

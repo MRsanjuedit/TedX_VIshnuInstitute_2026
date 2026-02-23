@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Instructions for ticket purchase
 const ticketInstructions = [
@@ -21,6 +21,14 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showTicketModal, setShowTicketModal] = useState(false);
+  const [venueActive, setVenueActive] = useState(false);
+
+  useEffect(() => {
+    // Reset venue active state when navigating away from home page
+    if (location.pathname !== "/") {
+      setVenueActive(false);
+    }
+  }, [location.pathname]);
 
   const handleBuyTickets = () => {
     setShowTicketModal(true);
@@ -32,7 +40,8 @@ function Navbar() {
   };
 
   const handleVenueClick = (e) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
+    setVenueActive(true);
     setTimeout(() => {
       const footerElement = document.getElementById("footer");
       if (footerElement) {
@@ -43,6 +52,7 @@ function Navbar() {
   };
 
   const handleNavClick = () => {
+    setVenueActive(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
     setMobileMenu(false);
   };
@@ -77,8 +87,10 @@ function Navbar() {
                 <DropdownMenuTrigger className="p-0 outline-none ring-0">
                   <NavLink
                     to="/editions"
+                    end
+                    onClick={handleNavClick}
                     className={`flex items-center gap-1 text-base lg:text-base xl:text-lg font-medium cursor-pointer transition hover:scale-110 ${
-                      isEditionsActive
+                      isEditionsActive && !venueActive
                         ? "text-red-500 font-semibold"
                         : "text-white hover:text-gray-300"
                     }`}
@@ -112,19 +124,26 @@ function Navbar() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
+            ) : item.label === "Venue" ? (
+              <button
+                key={item.label}
+                onClick={handleVenueClick}
+                className={`text-base lg:text-base xl:text-lg font-medium transition-all duration-200 hover:scale-110 cursor-pointer ${
+                  venueActive ? "text-red-500 font-semibold" : "text-white"
+                }`}
+              >
+                {item.label}
+              </button>
             ) : (
               <NavLink
                 key={item.path}
                 to={item.path}
-                onClick={
-                  item.label === "Venue" ? handleVenueClick : handleNavClick
-                }
+                end={item.path === "/"}
+                onClick={handleNavClick}
                 className={({ isActive }) =>
-                  item.label === "Venue"
-                    ? "text-base lg:text-base xl:text-lg font-medium transition-all duration-200 hover:scale-110 text-white"
-                    : `text-base lg:text-base xl:text-lg font-medium transition-all duration-200 hover:scale-110 ${
-                        isActive ? "text-red-500 font-semibold" : "text-white"
-                      }`
+                  `text-base lg:text-base xl:text-lg font-medium transition-all duration-200 hover:scale-110 ${
+                    isActive && !venueActive ? "text-red-500 font-semibold" : "text-white"
+                  }`
                 }
               >
                 {item.label}
@@ -172,8 +191,9 @@ function Navbar() {
             <DropdownMenu key={item.label} onOpenChange={setOpen}>
               <DropdownMenuTrigger className="p-0 outline-none ring-0">
                 <div
+                  onClick={handleNavClick}
                   className={`flex items-center gap-2 text-lg font-medium ${
-                    isEditionsActive
+                    isEditionsActive && !venueActive
                       ? "text-red-500 font-semibold"
                       : "text-white"
                   }`}
@@ -207,23 +227,26 @@ function Navbar() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+          ) : item.label === "Venue" ? (
+            <button
+              key={item.label}
+              onClick={handleVenueClick}
+              className={`text-lg font-medium cursor-pointer ${
+                venueActive ? "text-red-500 font-semibold" : "text-white"
+              }`}
+            >
+              {item.label}
+            </button>
           ) : (
             <NavLink
               key={item.path}
               to={item.path}
-              onClick={(e) => {
-                if (item.label === "Venue") {
-                  handleVenueClick(e);
-                } else {
-                  handleNavClick();
-                }
-              }}
+              end={item.path === "/"}
+              onClick={handleNavClick}
               className={({ isActive }) =>
-                item.label === "Venue"
-                  ? "text-lg text-white font-medium"
-                  : `text-lg font-medium ${
-                      isActive ? "text-red-500 font-semibold" : "text-white"
-                    }`
+                `text-lg font-medium ${
+                  isActive && !venueActive ? "text-red-500 font-semibold" : "text-white"
+                }`
               }
             >
               {item.label}

@@ -105,7 +105,7 @@ function Footer() {
 
       {/* Bottom Footer */}
       <div className="bg-black w-full pb-8 text-center text-white">
-        <p>© Copyright 2025-2026 TEDx Vishnu Institute</p>
+        <p>© Copyright 2026 TEDxVishnu Institute</p>
       </div>
     </div>
   );
