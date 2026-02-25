@@ -7,7 +7,7 @@ const speakers = [
     name: "Ashile Sharmila Anand",
     role: "Founder & Author, The Ashile Sharmila Anand Foundation",
     team: "TEDx Speakers",
-    description: "Ashile is a 22-year-old entrepreneur...",
+    description: "Ashile is a 22-year-old entrepreneur, and internationally certified trainer, deeply committed to working with children and young adults. She is the Co-Founder of Aasha Academia, a platform focused on academics and personal development for children. She is the author of the bestselling book I Miss Understood, and has trained over 10,000 students across schools and colleges in India. Ashile has conducted workshops for institutions such as the London School of Economics, AIIMS, Barclays, and several leading educational institutions across the country & abroad. Currently a student at the London School of Economics, Ashile combines academic rigour with real-world impact. In recognition of her work, she was recently honoured with the 'Inspiring Annette Award' by Rotary. Her Mission is to transform the education system that creates young leaders that shine their light so bright that the world becomes a happier, better place.",
     image: "/speakers/Ashile.webp",
   },
   {
@@ -15,7 +15,7 @@ const speakers = [
     name: "Manohar Chivukula",
     role: "Founder & Influencer, Mencyclopedia",
     team: "TEDx Speakers",
-    description: "Manohar Chivukula is the founder of Mencyclopedia...",
+    description: "Manohar Chivukula is the founder of Mencyclopedia, a trailblazing platform that brought men’s selfcare, grooming, fashion and lifestyle conversations to Telugu-speaking audiences where such topics were once considered taboo. As one of the first in South India to break into this space, he set out to dismantle stereotypes that framed self-care as unnecessary or unmanly. Driven by a clear mission to make men better Manohar simplifies science into actionable insights that go beyond grooming, emphasizing awareness, discipline, and self-respect as foundations of modern masculinity. Through clarity and consistency, he continues to reshape how men in South India view self-care and personal growth.",
     image: "/speakers/Manohar.webp",
   },
   {

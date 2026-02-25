@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Card = ({ data }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const checkTruncation = () => {
+      if (textRef.current) {
+        setIsTruncated(textRef.current.scrollHeight > textRef.current.clientHeight);
+      }
+    };
+    
+    checkTruncation();
+    window.addEventListener('resize', checkTruncation);
+    return () => window.removeEventListener('resize', checkTruncation);
+  }, [data.description]);
 
   return (
     <div className="group relative w-full h-[500px] rounded-3xl overflow-hidden bg-black ring-1 ring-white/10 hover:ring-red-600 transition-all duration-500 hover:shadow-[0_0_50px_rgba(220,38,38,0.3)]">
@@ -47,13 +61,13 @@ const Card = ({ data }) => {
             </p>
           </div>
 
-          <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
+          <div className="max-h-0 group-hover:max-h-96 overflow-hidden transition-all duration-500 opacity-0 group-hover:opacity-100">
             {showFullDescription ? (
               <div className="max-h-48 overflow-y-auto pr-2">
                 <p className="text-gray-300 text-sm leading-relaxed">
                   {data.description}
                 </p>
-                {data.description && data.description.length > 200 && (
+                {isTruncated && (
                   <button
                     onClick={() => setShowFullDescription(false)}
                     className="text-red-500 hover:text-red-400 text-xs font-semibold mt-2 transition-colors duration-200"
@@ -64,15 +78,27 @@ const Card = ({ data }) => {
               </div>
             ) : (
               <div>
-                <p className="text-gray-300 text-sm leading-relaxed line-clamp-2">
+                <p 
+                  ref={textRef}
+                  className="text-gray-300 text-sm overflow-hidden mb-1"
+                  style={{
+                    display: '-webkit-box',
+                    WebkitLineClamp: '2',
+                    WebkitBoxOrient: 'vertical',
+                    lineHeight: '1.5em',
+                    maxHeight: '3em',
+                    wordBreak: 'break-word',
+                    whiteSpace: 'normal'
+                  }}
+                >
                   {data.description}
                 </p>
-                {data.description && data.description.length > 200 && (
+                {isTruncated && (
                   <button
                     onClick={() => setShowFullDescription(true)}
-                    className="text-red-500 hover:text-red-400 text-sm font-semibold transition-colors duration-200 mt-1"
+                    className="text-red-500 hover:text-red-400 text-sm font-semibold transition-colors duration-200 block mt-1"
                   >
-                    Know More
+                    view more
                   </button>
                 )}
               </div>
