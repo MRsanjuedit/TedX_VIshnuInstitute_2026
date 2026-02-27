@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const showSchedule = false; // Set to true to show schedule, false for coming soon
+  const showSchedule = true; // Set to true to show schedule, false for coming soon
 
   const handleVideoCanPlay = () => {
     setIsLoading(false);
