@@ -63,20 +63,7 @@ const speakers = [
       "Sri Harsha B.R. is a business leader and mentor with over two decades of experience across technology, real estate, and entrepreneurship. He has worked with organizations such as Tata Consultancy Services (TCS) and Thomson Reuters, managing global teams and large-scale business processes. He later founded a prop-tech venture focused on integrating technology into real estate operations. A Realty+ 40 Under 40 honoree, he actively coordinates with universities to bridge the gap between education and enterprise. Currently, he leads the business at Elegant Builders & Developers as VP & Business Head and continues to work as a trainer and motivator, driven by disciplined systems, ethical leadership, and long-term thinking.",
     image: "/speakers/Harsha.webp",
   },
-  {
-    id: 8,
-    name: "Speaker 8",
-    role: "Speaker",
-    team: "TEDx Speakers",
-    description: "To be announced soon.",
-  },
-  {
-    id: 9,
-    name: "Speaker 9",
-    role: "Speaker",
-    team: "TEDx Speakers",
-    description: "To be announced soon.",
-  },
+
 ];
 
 export default function Speakers() {
