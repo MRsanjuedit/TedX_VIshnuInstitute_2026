@@ -165,7 +165,7 @@ const speakers = [
   },
   {
     id: 14,
-    name: "Deeksha",
+    name: "Deexitha",
     role: "Member",
     team: "Communication and Production",
     description:
